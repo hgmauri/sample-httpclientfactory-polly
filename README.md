@@ -1,1 +1,1 @@
-# sample-rate
+# sample-httpclientfactory-polly
