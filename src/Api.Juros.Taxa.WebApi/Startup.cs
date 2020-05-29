@@ -65,7 +65,7 @@ namespace Api.Juros.Taxa.WebApi
                 app.UseSwaggerUI(c =>
                 {
                     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Taxa de Juros");
-                    c.RoutePrefix = "api-docs";
+                    c.RoutePrefix = "swagger";
                 });
             }
             else

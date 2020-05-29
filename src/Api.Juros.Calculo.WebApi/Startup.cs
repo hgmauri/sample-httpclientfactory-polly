@@ -66,7 +66,7 @@ namespace Api.Juros.Calculo.WebApi
                 app.UseSwaggerUI(c =>
                 {
                     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Cálculo de Juros");
-                    c.RoutePrefix = "api-docs";
+                    c.RoutePrefix = "swagger";
                 });
             }
             else
