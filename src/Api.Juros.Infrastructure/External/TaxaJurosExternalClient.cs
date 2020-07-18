@@ -17,7 +17,7 @@ namespace Api.Juros.Infrastructure.External
         {
             var client = _factory.CreateClient("taxa");
 
-            var result = await client.GetAsync("taxaJuros");
+            var result = await client.GetAsync("Get");
 
             var resultContent = await result.Content.ReadAsStringAsync();
 
