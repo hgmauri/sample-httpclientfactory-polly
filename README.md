@@ -1,1 +1,1 @@
-# sample-httpclientfactory-polly
+# HttpClientFactory in .NET Core 3.1
