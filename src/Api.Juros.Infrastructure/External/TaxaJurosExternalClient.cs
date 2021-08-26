@@ -13,6 +13,7 @@ namespace Api.Juros.Infrastructure.External
         {
             _factory = factory;
         }
+
         public async Task<double> GetTaxaJuros()
         {
             var client = _factory.CreateClient("taxa");
@@ -21,7 +22,7 @@ namespace Api.Juros.Infrastructure.External
 
             var resultContent = await result.Content.ReadAsStringAsync();
 
-            var resultObject = JsonSerializer.Deserialize<TaxaJurosOutput>(resultContent, new JsonSerializerOptions {PropertyNameCaseInsensitive = true});
+            var resultObject = JsonSerializer.Deserialize<TaxaJurosOutput>(resultContent, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
 
             return resultObject.Taxa;
 
