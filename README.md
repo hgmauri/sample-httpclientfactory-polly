@@ -1,1 +1,1 @@
-# HttpClientFactory in .NET Core 3.1
+# HttpClientFactory in .NET 5.0
